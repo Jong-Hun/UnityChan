@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityChan", "UnityChan.csproj", "{4E4F9B61-3C63-8A68-5C78-A4FCE8908653}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityChan.Editor", "UnityChan.Editor.csproj", "{8BAFAAC4-D442-1611-E647-9017AC41EEE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E4F9B61-3C63-8A68-5C78-A4FCE8908653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E4F9B61-3C63-8A68-5C78-A4FCE8908653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E4F9B61-3C63-8A68-5C78-A4FCE8908653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E4F9B61-3C63-8A68-5C78-A4FCE8908653}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BAFAAC4-D442-1611-E647-9017AC41EEE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BAFAAC4-D442-1611-E647-9017AC41EEE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BAFAAC4-D442-1611-E647-9017AC41EEE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BAFAAC4-D442-1611-E647-9017AC41EEE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
