@@ -1,0 +1,184 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1650611128455494}
+  m_IsPrefabParent: 1
+--- !u!1 &1650611128455494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4992967140184576}
+  - component: {fileID: 114198087399612392}
+  m_Layer: 0
+  m_Name: Atlas_Icon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4992967140184576
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1650611128455494}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114198087399612392
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1650611128455494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: cfc61b277e1928a4883da798187a35f5, type: 2}
+  sprites:
+  - name: Home
+    outer:
+      serializedVersion: 2
+      x: 1026
+      y: 616
+      width: 512
+      height: 408
+    inner:
+      serializedVersion: 2
+      x: 1026
+      y: 616
+      width: 512
+      height: 408
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.12745099
+    paddingBottom: 0.12745099
+  - name: Sword
+    outer:
+      serializedVersion: 2
+      x: 513
+      y: 512
+      width: 512
+      height: 512
+    inner:
+      serializedVersion: 2
+      x: 513
+      y: 512
+      width: 512
+      height: 512
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Pocket
+    outer:
+      serializedVersion: 2
+      x: 1026
+      y: 109
+      width: 378
+      height: 506
+    inner:
+      serializedVersion: 2
+      x: 1026
+      y: 109
+      width: 378
+      height: 506
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.011857707
+    paddingBottom: 0
+  - name: Map2
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 39
+      width: 512
+      height: 472
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 39
+      width: 512
+      height: 472
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.042372882
+    paddingBottom: 0.042372882
+  - name: Option1
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 512
+      width: 512
+      height: 512
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 512
+      width: 512
+      height: 512
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Book1
+    outer:
+      serializedVersion: 2
+      x: 1405
+      y: 249
+      width: 512
+      height: 366
+    inner:
+      serializedVersion: 2
+      x: 1405
+      y: 249
+      width: 512
+      height: 366
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.19945355
+    paddingBottom: 0.19945355
+  - name: Map1
+    outer:
+      serializedVersion: 2
+      x: 513
+      y: 63
+      width: 512
+      height: 448
+    inner:
+      serializedVersion: 2
+      x: 513
+      y: 63
+      width: 512
+      height: 448
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.071428575
+    paddingBottom: 0.071428575
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
