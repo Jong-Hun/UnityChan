@@ -1,0 +1,12 @@
+﻿<Properties StartupItem="UnityChan.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\NGUI\Examples\Shaders\Refractive.shader">
+    <Files>
+      <File FileName="Assets\NGUI\Examples\Shaders\Refractive.shader" Line="66" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

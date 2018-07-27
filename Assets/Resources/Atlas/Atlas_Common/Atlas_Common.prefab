@@ -1,0 +1,274 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1478146981778300}
+  m_IsPrefabParent: 1
+--- !u!1 &1478146981778300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4586733310566310}
+  - component: {fileID: 114077172015715822}
+  m_Layer: 0
+  m_Name: Atlas_Common
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4586733310566310
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1478146981778300}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114077172015715822
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1478146981778300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: f29fa610ed5cc3f4d919dc0688c0e54e, type: 2}
+  sprites:
+  - name: Rhombus1
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 384
+      width: 310
+      height: 310
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 384
+      width: 310
+      height: 310
+    rotated: 0
+    paddingLeft: 0.029032258
+    paddingRight: 0.032258064
+    paddingTop: 0.029032258
+    paddingBottom: 0.032258064
+  - name: Edge2
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 695
+      width: 329
+      height: 329
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 695
+      width: 329
+      height: 329
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Edge1
+    outer:
+      serializedVersion: 2
+      x: 330
+      y: 695
+      width: 329
+      height: 329
+    inner:
+      serializedVersion: 2
+      x: 330
+      y: 695
+      width: 329
+      height: 329
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Circle2
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 162
+      width: 221
+      height: 221
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 162
+      width: 221
+      height: 221
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Bar2
+    outer:
+      serializedVersion: 2
+      x: 533
+      y: 410
+      width: 332
+      height: 28
+    inner:
+      serializedVersion: 2
+      x: 533
+      y: 410
+      width: 332
+      height: 28
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Circle1
+    outer:
+      serializedVersion: 2
+      x: 311
+      y: 320
+      width: 221
+      height: 221
+    inner:
+      serializedVersion: 2
+      x: 311
+      y: 320
+      width: 221
+      height: 221
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Button2
+    outer:
+      serializedVersion: 2
+      x: 311
+      y: 542
+      width: 330
+      height: 152
+    inner:
+      serializedVersion: 2
+      x: 311
+      y: 542
+      width: 330
+      height: 152
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Bar4
+    outer:
+      serializedVersion: 2
+      x: 533
+      y: 505
+      width: 339
+      height: 36
+    inner:
+      serializedVersion: 2
+      x: 533
+      y: 505
+      width: 339
+      height: 36
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Button1
+    outer:
+      serializedVersion: 2
+      x: 642
+      y: 542
+      width: 330
+      height: 152
+    inner:
+      serializedVersion: 2
+      x: 642
+      y: 542
+      width: 330
+      height: 152
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Bar3
+    outer:
+      serializedVersion: 2
+      x: 533
+      y: 439
+      width: 332
+      height: 28
+    inner:
+      serializedVersion: 2
+      x: 533
+      y: 439
+      width: 332
+      height: 28
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Bar1
+    outer:
+      serializedVersion: 2
+      x: 533
+      y: 468
+      width: 339
+      height: 36
+    inner:
+      serializedVersion: 2
+      x: 533
+      y: 468
+      width: 339
+      height: 36
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Rhombus2
+    outer:
+      serializedVersion: 2
+      x: 660
+      y: 714
+      width: 310
+      height: 310
+    inner:
+      serializedVersion: 2
+      x: 660
+      y: 714
+      width: 310
+      height: 310
+    rotated: 0
+    paddingLeft: 0.029032258
+    paddingRight: 0.032258064
+    paddingTop: 0.029032258
+    paddingBottom: 0.032258064
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
