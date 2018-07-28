@@ -338,6 +338,8 @@
     <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
     <Compile Include="Assets\Resources\Script\CameraMove.cs" />
+    <Compile Include="Assets\Resources\Script\CSVParser.cs" />
+    <Compile Include="Assets\Resources\Script\DataManager.cs" />
     <Compile Include="Assets\Resources\Script\EnumGroup.cs" />
     <Compile Include="Assets\Resources\Script\FSM_Player.cs" />
     <Compile Include="Assets\Resources\Script\FSMBase.cs" />

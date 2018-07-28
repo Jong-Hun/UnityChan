@@ -206,10 +206,10 @@ MonoBehaviour:
       height: 152
     inner:
       serializedVersion: 2
-      x: 642
-      y: 542
-      width: 330
-      height: 152
+      x: 662
+      y: 562
+      width: 290
+      height: 112
     rotated: 0
     paddingLeft: 0
     paddingRight: 0
