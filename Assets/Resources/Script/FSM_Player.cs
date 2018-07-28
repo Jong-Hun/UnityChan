@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.EventSystems;
 
 public class FSM_Player : FSMBase {
 
@@ -17,29 +16,41 @@ public class FSM_Player : FSMBase {
 
     ClickTarget clickTarget = ClickTarget.None;
 
+    Transform target; // 클릭한 타겟
+
+    // 임시..
+    GameObject battlePopup;
+
     protected override void Awake()
     {
         base.Awake();
 
+        target = null;
+
         navAgent = GetComponent<NavMeshAgent>();
 
         layerMask = LayerMask.GetMask(GroundLayer, blockLayer, enemyLayer, npcLayer);
+
+        battlePopup = GameObject.Find("PanelBattleTest");
+        if (battlePopup.activeSelf)
+        {
+            battlePopup.SetActive(false);
+        }
     }
 
 	void Update ()
     {
-		if(Input.GetMouseButtonDown(0))
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);           
+        if (Input.GetMouseButtonDown(0))
+            {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hitInfo;
 
-            if (Physics.Raycast(ray, out hitInfo, 100f, layerMask))
+            if (UICamera.hoveredObject == null)
             {
-                int layer = hitInfo.transform.gameObject.layer;
-
-                // UI를 클릭해도 뒤쪽이 눌리지않음 (유니티에 UI를 추가안하고 이 코드를 사용하면 에러뜸)
-                //if (!EventSystem.current.IsPointerOverGameObject())
+                if (Physics.Raycast(ray, out hitInfo, 100f, layerMask))
                 {
+                    int layer = hitInfo.transform.gameObject.layer;
+
                     if (layer == LayerMask.NameToLayer(GroundLayer))
                     {
                         clickTarget = ClickTarget.move;
@@ -47,20 +58,32 @@ public class FSM_Player : FSMBase {
                     }
                     else if (layer == LayerMask.NameToLayer(enemyLayer))
                     {
+                        target = hitInfo.transform;
                         clickTarget = ClickTarget.enemy;
-                        navAgent.SetDestination(hitInfo.point + Vector3.one);
+                        navAgent.SetDestination(hitInfo.point);
                     }
                     SetState(CharacterState.Run);
                 }
-            }     
+            }
+
         }
 	}
+
+    public void BattleMode()
+    {
+        transform.LookAt(target);
+        navAgent.isStopped = true;
+        battlePopup.SetActive(true);
+
+        SetState(CharacterState.Battle);
+    }
 
     protected override IEnumerator Idle()
     {
         do
         {
             yield return null;
+
         } while (!isNewState);
     }
 
@@ -81,7 +104,7 @@ public class FSM_Player : FSMBase {
                     }break;
                     case ClickTarget.enemy:
                     {
-                         SetState(CharacterState.Battle);
+
                     }break;
                 }
             }
@@ -94,7 +117,8 @@ public class FSM_Player : FSMBase {
         {
             yield return null;
 
-            
+            transform.LookAt(target);
+
         } while (!isNewState);
     }
 }
