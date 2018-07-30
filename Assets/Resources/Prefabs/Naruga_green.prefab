@@ -1498,6 +1498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   isNewState: 0
+  detectRange: 4
 --- !u!136 &136255855559573350
 CapsuleCollider:
   m_ObjectHideFlags: 1

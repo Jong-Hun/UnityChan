@@ -7,13 +7,12 @@ public class FSMEnemy : FSMBase {
 
     Transform player;
     FSM_Player fsmPlayer;
-    float detectRange;
+    public float detectRange = 4;
 
     protected override void Awake()
     {
         base.Awake();
-        detectRange = 4;
-
+        //detectRange = 4;
     }
 
     protected void Start()
@@ -44,10 +43,10 @@ public class FSMEnemy : FSMBase {
 
             if(DetectPlayer())
             {
-                SetState(CharacterState.Battle);
-                transform.LookAt(player);
-
+                fsmPlayer.SetTarget(transform);
+                fsmPlayer.NavStop();             
                 fsmPlayer.BattleMode();
+                SetState(CharacterState.Battle);
             }
 
         } while (!isNewState);
@@ -59,7 +58,9 @@ public class FSMEnemy : FSMBase {
         {
             yield return null;
 
-            if(!DetectPlayer())
+            transform.LookAt(player);
+
+            if (!DetectPlayer())
             {
                 SetState(CharacterState.Idle);
             }
