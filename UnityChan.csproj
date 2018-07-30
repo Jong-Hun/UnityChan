@@ -344,8 +344,10 @@
     <Compile Include="Assets\Resources\Script\FSM_Player.cs" />
     <Compile Include="Assets\Resources\Script\FSMBase.cs" />
     <Compile Include="Assets\Resources\Script\FSMEnemy.cs" />
+    <Compile Include="Assets\Resources\Script\Loading.cs" />
     <Compile Include="Assets\Resources\Script\MonsterManager.cs" />
     <Compile Include="Assets\Resources\Script\PlayerManager.cs" />
+    <Compile Include="Assets\Resources\Script\SpriteImage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
