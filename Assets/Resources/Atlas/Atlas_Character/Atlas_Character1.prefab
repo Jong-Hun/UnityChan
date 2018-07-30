@@ -56,13 +56,13 @@ MonoBehaviour:
   - name: portrait_kohaku_B_01
     outer:
       serializedVersion: 2
-      x: 1020
+      x: 0
       y: 466
       width: 339
       height: 558
     inner:
       serializedVersion: 2
-      x: 1020
+      x: 0
       y: 466
       width: 339
       height: 558
@@ -92,13 +92,13 @@ MonoBehaviour:
   - name: portrait_kohaku_B_06
     outer:
       serializedVersion: 2
-      x: 1360
+      x: 680
       y: 466
       width: 339
       height: 558
     inner:
       serializedVersion: 2
-      x: 1360
+      x: 680
       y: 466
       width: 339
       height: 558
@@ -110,13 +110,13 @@ MonoBehaviour:
   - name: portrait_kohaku_B_05
     outer:
       serializedVersion: 2
-      x: 0
+      x: 1020
       y: 466
       width: 339
       height: 558
     inner:
       serializedVersion: 2
-      x: 0
+      x: 1020
       y: 466
       width: 339
       height: 558
@@ -128,13 +128,13 @@ MonoBehaviour:
   - name: portrait_kohaku_B_03
     outer:
       serializedVersion: 2
-      x: 680
+      x: 1360
       y: 466
       width: 339
       height: 558
     inner:
       serializedVersion: 2
-      x: 680
+      x: 1360
       y: 466
       width: 339
       height: 558
