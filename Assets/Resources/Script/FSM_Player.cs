@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.EventSystems;
 
 public class FSM_Player : FSMBase {
 
@@ -15,7 +16,8 @@ public class FSM_Player : FSMBase {
 
     ClickTarget clickTarget = ClickTarget.None;
 
-    Transform target; // lookAt 타겟(npc, enemy)
+    Transform target;
+    FSMEnemy fsmEnemy;
 
     Vector3 EscapePos;
 
@@ -32,8 +34,8 @@ public class FSM_Player : FSMBase {
 
         layerMask = LayerMask.GetMask(GroundLayer, blockLayer, npcLayer);
 
-        battlePopup = GameObject.Find("PanelBattleTest");
-        battleCommand = GameObject.Find("PanelBattleTest02");
+        battlePopup = GameObject.Find("PanelBattle01");
+        battleCommand = GameObject.Find("PanelBattle02");
 
         if (battlePopup.activeSelf)      battlePopup.SetActive(false);
         if (battleCommand.activeSelf)    battleCommand.SetActive(false);
@@ -44,7 +46,7 @@ public class FSM_Player : FSMBase {
     {
         if (Input.GetMouseButtonDown(0))
             {
-            if (UICamera.hoveredObject == null)
+            if (EventSystem.current.IsPointerOverGameObject() == false)
             {
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hitInfo;
@@ -71,14 +73,14 @@ public class FSM_Player : FSMBase {
     public void SetTarget(Transform tran)
     {
         target = tran;
+        fsmEnemy = target.GetComponent<FSMEnemy>();
+        
     }
-
 
     public void NavStop()
     {
         navAgent.SetDestination(transform.position);
     }
-
 
     public void BattleMode()
     {
@@ -147,6 +149,19 @@ public class FSM_Player : FSMBase {
 
             if(navAgent.remainingDistance == 0.0f)
                 SetState(CharacterState.Idle);
+            
+        } while (!isNewState);
+    }
+
+    protected virtual IEnumerator Attack()
+    {
+        do
+        {
+            yield return null;
+
+            fsmEnemy.SetState(CharacterState.Damage);
+
+            SetState(CharacterState.Battle);
             
         } while (!isNewState);
     }

@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class FSMEnemy : FSMBase {
 
-
-    Transform player;
+    protected Transform player;
     FSM_Player fsmPlayer;
-    public float detectRange = 4;
+    public float detectRange;
 
     protected override void Awake()
     {
         base.Awake();
-        //detectRange = 4;
     }
 
     protected void Start()
@@ -26,7 +24,7 @@ public class FSMEnemy : FSMBase {
         base.OnEnable();
     }
 
-    bool DetectPlayer()
+    protected bool DetectPlayer()
     {
         if (Vector3.Distance(player.position, transform.position) < detectRange)
         {
@@ -58,14 +56,10 @@ public class FSMEnemy : FSMBase {
         {
             yield return null;
 
-            transform.LookAt(player);
-
             if (!DetectPlayer())
             {
                 SetState(CharacterState.Idle);
             }
-
-            Debug.Log("battle enemy");
 
         } while (!isNewState);
     }
@@ -84,6 +78,8 @@ public class FSMEnemy : FSMBase {
         do
         {
             yield return null;
+
+            SetState(CharacterState.Battle);
 
         } while (!isNewState);
     }
