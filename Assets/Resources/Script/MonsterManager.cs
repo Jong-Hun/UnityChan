@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MonsterManager : MonoBehaviour {
-    // 임시 코딩  다지우고 고칠필요있음
 
     public GameObject NarugaPrefab;
 

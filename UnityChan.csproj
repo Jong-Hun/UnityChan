@@ -337,6 +337,7 @@
     <Compile Include="Assets\NGUI\Scripts\UI\UITiledSprite.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
+    <Compile Include="Assets\Resources\Script\BattleButton.cs" />
     <Compile Include="Assets\Resources\Script\CameraMove.cs" />
     <Compile Include="Assets\Resources\Script\CSVParser.cs" />
     <Compile Include="Assets\Resources\Script\DataManager.cs" />
@@ -346,6 +347,7 @@
     <Compile Include="Assets\Resources\Script\FSMEnemy.cs" />
     <Compile Include="Assets\Resources\Script\Loading.cs" />
     <Compile Include="Assets\Resources\Script\MonsterManager.cs" />
+    <Compile Include="Assets\Resources\Script\Naruga_green.cs" />
     <Compile Include="Assets\Resources\Script\PlayerManager.cs" />
     <Compile Include="Assets\Resources\Script\SpriteImage.cs" />
   </ItemGroup>

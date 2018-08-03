@@ -21,5 +21,4 @@ public enum ClickTarget
 {
     None,
     move,
-    enemy,
 }
