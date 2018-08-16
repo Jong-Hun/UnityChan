@@ -341,6 +341,7 @@
     <Compile Include="Assets\Resources\Script\CameraMove.cs" />
     <Compile Include="Assets\Resources\Script\CSVParser.cs" />
     <Compile Include="Assets\Resources\Script\DataManager.cs" />
+    <Compile Include="Assets\Resources\Script\DontDestory.cs" />
     <Compile Include="Assets\Resources\Script\EnumGroup.cs" />
     <Compile Include="Assets\Resources\Script\FSM_Player.cs" />
     <Compile Include="Assets\Resources\Script\FSMBase.cs" />
@@ -349,6 +350,7 @@
     <Compile Include="Assets\Resources\Script\MonsterManager.cs" />
     <Compile Include="Assets\Resources\Script\Naruga_green.cs" />
     <Compile Include="Assets\Resources\Script\PlayerManager.cs" />
+    <Compile Include="Assets\Resources\Script\SoundManager.cs" />
     <Compile Include="Assets\Resources\Script\SpriteImage.cs" />
   </ItemGroup>
   <ItemGroup>
