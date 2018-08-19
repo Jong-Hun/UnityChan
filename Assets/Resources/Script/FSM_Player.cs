@@ -142,13 +142,16 @@ public class FSM_Player : FSMBase {
         do
         {
             yield return null;
-
-            target = null;
             battleCommand.SetActive(false);
             navAgent.SetDestination(EscapePos);
 
-            if(navAgent.remainingDistance == 0.0f)
+            if (navAgent.remainingDistance == 0.0f)
+            {
                 SetState(CharacterState.Idle);
+                fsmEnemy.SetState(CharacterState.Idle);
+                target = null;
+                fsmEnemy = null;
+            }
             
         } while (!isNewState);
     }

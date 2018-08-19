@@ -350,6 +350,8 @@
     <Compile Include="Assets\Resources\Script\Naruga_green.cs" />
     <Compile Include="Assets\Resources\Script\PlayerManager.cs" />
     <Compile Include="Assets\Resources\Script\SpriteImage.cs" />
+    <Compile Include="Assets\Resources\Script\Sword.cs" />
+    <Compile Include="Assets\Resources\Script\WeaponEquip.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />

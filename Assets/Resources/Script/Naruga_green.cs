@@ -14,11 +14,6 @@ public class Naruga_green : FSMEnemy {
 
             naruga_rotate.LookAt(player);
 
-            if (!DetectPlayer())
-            {
-                SetState(CharacterState.Idle);
-            }
-
         } while (!isNewState);
     }
 }

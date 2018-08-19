@@ -56,11 +56,6 @@ public class FSMEnemy : FSMBase {
         {
             yield return null;
 
-            if (!DetectPlayer())
-            {
-                SetState(CharacterState.Idle);
-            }
-
         } while (!isNewState);
     }
 
